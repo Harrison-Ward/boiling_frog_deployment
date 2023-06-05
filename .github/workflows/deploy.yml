@@ -1,15 +1,14 @@
 name: Build and Deploy
 
 on:
-  # workflow_dispatch: {}
   push:
-    branches: [ main ]
-  pull_request:
+    branches:
+      - main
 
 
 env:
   applicationfolder: app
-  AWS_REGION: us-east-1
+  AWS_REGION: us-east-2
   S3BUCKET: codedeploystack-webappdeploymentbucket-17huiranoijgv
 
 
